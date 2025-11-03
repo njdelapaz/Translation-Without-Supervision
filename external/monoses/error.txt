@@ -1,0 +1,33 @@
+bash: /sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/moses/bin/lmplz: No such file or directory
+bash: /sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/moses/bin/build_binary: No such file or directory
+bash: /sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/moses/bin/lmplz: No such file or directory
+bash: /sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/moses/bin/build_binary: No such file or directory
+bash: /sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/phrase2vec/word2vec: No such file or directory
+head: cannot open './projectgroup/Translation-Without-Supervision/model/tmpy44vhpio/vocab-full.txt' for reading: No such file or directory
+bash: /sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/phrase2vec/word2vec: No such file or directory
+bash: /sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/phrase2vec/word2vec: No such file or directory
+head: cannot open './projectgroup/Translation-Without-Supervision/model/tmpy44vhpio/vocab-full.txt' for reading: No such file or directory
+bash: /sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/phrase2vec/word2vec: No such file or directory
+Traceback (most recent call last):
+  File "/sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/vecmap/map_embeddings.py", line 422, in <module>
+    main()
+  File "/sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/third-party/vecmap/map_embeddings.py", line 145, in main
+    srcfile = open(args.src_input, encoding=args.encoding, errors='surrogateescape')
+FileNotFoundError: [Errno 2] No such file or directory: './projectgroup/Translation-Without-Supervision/model/step3/emb.src'
+Traceback (most recent call last):
+  File "/sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/training/induce-phrase-table.py", line 20, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+sort: cannot read: ./projectgroup/Translation-Without-Supervision/model/tmpy44vhpio/src2trg.phrase-table: No such file or directory
+Traceback (most recent call last):
+  File "/sfs/gpfs/tardis/home/wnj9tx/projectgroup/Translation-Without-Supervision/external/monoses/training/add-levenshtein.py", line 20, in <module>
+    import editdistance
+ModuleNotFoundError: No module named 'editdistance'
+Traceback (most recent call last):
+  File "train.py", line 718, in <module>
+    main()
+  File "train.py", line 705, in main
+    induce_phrase_table(args)
+  File "train.py", line 269, in induce_phrase_table
+    os.remove(args.tmp + '/' + part + '.phrase-table')
+FileNotFoundError: [Errno 2] No such file or directory: './projectgroup/Translation-Without-Supervision/model/tmpy44vhpio/src2trg.phrase-table'
