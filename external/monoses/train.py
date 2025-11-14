@@ -35,7 +35,7 @@ TRAINING = ROOT + '/training'
 
 
 def bash(command):
-    subprocess.run(['bash', '-c', command])
+    subprocess.run(['bash', '-c', command], check=True)
 
 
 def count_lines(path):
@@ -174,6 +174,7 @@ def train_lm(args):
     os.mkdir(root)
     for part in ('src', 'trg'):
         bash(quote(MOSES + '/bin/lmplz') +
+             ' -S 20G' +  # ADDED BY NATHAN - Limit memory to 20GB (adjust based on available RAM)
              ' -T ' + quote(args.tmp + '/lm') +
              ' -o ' + str(args.lm_order) +
              ' --prune ' + ' '.join(map(str, args.lm_prune)) +
