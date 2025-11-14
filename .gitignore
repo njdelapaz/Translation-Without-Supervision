@@ -4,3 +4,4 @@ venv_pytorch04/
 external/monoses/third-party/fast_align
 external/monoses/third-party/moses
 external/monoses/third-party/phrase2vec
+/models/test*
